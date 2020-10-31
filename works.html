@@ -10,36 +10,40 @@
 
 <body>
     <header>
-        <h3>
-            <a href="index.html">Bemutatkozó oldal</a>
-        </h3>
+        <nav id="menu" class="clearfix">
+            <ul>
+                <li class="left"><a href="index.html">Bemutatkozó oldal</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav id="menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="works.html">Works</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
+
     <main>
         <h1>Eddigi munkáim</h1>
         <section>
-            <article class="works">
-                <img src="assets/babaszem.JPG" alt="babaszem">
+            <article class="works clearfix">
+                <div class="left">
+                    <img src="assets/babaszem.JPG" alt="babaszem">
+                </div>
                 <div class="description">
                     <h3>
                         <a href="http://jolatas.hu">Látásjavítás természetes módszerekkel</a>
                     </h3>
-                    <p>
+                    <p >
                         Ezen az oldalon minden információ megtalálható a szembetegségekről, azok tüneteiről,
                         kezeléséről,
                         okairól, gyógyításáról
                     </p>
                 </div>
+                
             </article>
-            <article class="works">
-                <img src="assets/smoothies-2253423_1920.jpg" alt="gyümölcsök és turmixok">
+            <article class="works clearfix">
+                <div class="left">
+                    <img src="assets/smoothies-2253423_1920.jpg" alt="gyümölcsök és turmixok">
+                </div>
                 <div class="description">
                     <h3>
                         <a href="http://hasznos-infok.hu">Hasznos információk</a>
@@ -48,9 +52,12 @@
                         Hasznos információk egészség, gyógyulás, táplálkozás, böjt, látásjavítás témakörben
                     </p>
                 </div>
+                
             </article>
-            <article class="works">
-                <img src="assets/buzavirág.jpg" alt="búzavirág">
+            <article class="works clearfix">
+                <div class="left">
+                    <img src="assets/buzavirág.jpg" alt="búzavirág">
+                </div>
                 <div class="description">
                     <h3>
                         <a href="gallery.html">Virágaim, egyéb fotóim</a>
@@ -58,7 +65,9 @@
                     <p>Ebben a fotógalériában a virágaimról, illetve a természetben készített fotóimat tekintheted meg.
                     </p>
                 </div>
+                
             </article>
+            
         </section>
     </main>
     <footer>

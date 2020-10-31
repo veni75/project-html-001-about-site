@@ -4,69 +4,76 @@
 
 body {
     color: green;
-    background-color:rgb(248, 228, 186);
-}
-
-header {
-    background-color: rgb(247, 180, 35);    
-    padding: 1rem 2rem;    
-}
-
-header h3 a {        
-    font-variant: small-caps;
+    background-color: rgb(248, 228, 186);
     font-size: 2rem;
-    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.left {
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+a {
     text-decoration: none;
 }
 
-header h3 a:hover {
-    color: rgb(1, 63, 1);
-    background-color: rgb(197, 136, 3); 
-}
+/* HEADER,NAV */
 
-#menu, footer, main {
-    text-align: center;
+header {
+    background-color: rgb(248, 211, 132);    
 }
 
 nav {
-    background-color: rgb(248, 211, 132);    
-    padding: 1rem 2rem; 
+    background-color: rgb(248, 211, 132);
 }
 
-#menu ul li, #property ul li {
+#menu ul li{
     display: inline-block;
     width: 10rem;
     text-align: center;
-    padding: 1rem;    
+    padding: 0;
 }
 
-#menu ul li a{       
-    padding: 1rem;
-    font-size: 2rem;
+#menu ul li a {       
     font-variant: small-caps;
-    text-decoration: none;
 }
 
 #menu ul li a:hover {
     color: rgb(1, 63, 1);
-    background-color: rgb(247, 180, 35); 
+    background-color: rgb(247, 180, 35);
 }
 
 #menu ul li a:visited {
     color: green;
 }
 
+.cim{    
+    text-align: left;    
+}
+
+/*HOME*/
+
 h1 {
-    text-align: center;    
+    text-align: center;
     font-size: 2.5rem;
     margin-top: 2rem;
 }
 
-p {
+.introp {
     text-align: justify;
     max-width: 50vw;
-    margin: 2rem auto;
-    font-size: 2rem;    
+    margin: 2rem auto;    
 }
 
 #introduction img {
@@ -74,45 +81,37 @@ p {
     margin: 1rem;
 }
 
-#property ul li {
+.property {
     border: 2px solid rgb(121, 9, 1);
     background-color: rgb(253, 127, 117);
     height: 5rem;
-    width: 20vw;
-    margin: 2rem;
-    font-size: 2rem;
+    width: 25vw;  
+    margin:1rem;      
     text-transform: uppercase;
-}
-
-button {
-    background-color: aquamarine;
-    margin: 2rem;
-    padding: 1rem;    
 }
 
 /* WORKS */
 
 .works img {
-  width: 30vw;
-  padding: 3rem;
+    width: 45vw;
+    padding: 3rem;
 }
 
 .description {
-    display: inline-block;
-}
-
-.description h3 a {
-    font-size: 2rem;
-    text-decoration: none;
+    padding: 5rem;
 }
 
 .description h3 a:hover {
     color: rgb(1, 63, 1);
-    background-color: rgb(247, 180, 35); 
+    background-color: rgb(247, 180, 35);
 }
 
 .description h3 a:visited {
-    color: green;    
+    color: green;
+}
+
+article p {
+    text-align: justify;    
 }
 
 /* GALLERY */
@@ -122,3 +121,34 @@ button {
     margin: 1rem auto;
 }
 
+@media screen and (min-width: 600px) {
+    #gallery img {
+        width: 27vw;
+        margin: 1rem;
+    }
+}
+
+/* ABOUT */
+
+#aboutImg {
+    width: 17vw;
+}
+
+li{
+    text-align: left;
+}
+
+.about{    
+    display: inline-block;
+    width: 40%;
+}
+
+/* FOOTER */
+
+button {
+    border-radius: 99em;
+    font-size: 1rem;
+    background-color: rgb(214, 252, 214);
+    margin: 2rem;
+    padding: 1rem;
+}

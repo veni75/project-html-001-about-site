@@ -10,61 +10,68 @@
 
 <body>
     <header>
-        <h3>
-            <a href="index.html">Bemutatkozó oldal</a>
-        </h3>
+        <nav id="menu" class="clearfix">
+            <ul>
+                <li class="left"><a href="index.html">Bemutatkozó oldal</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="works.html">Works</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav id="menu">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="works.html">Works</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
+
     <main>
         <section>
             <h1>Rólam</h1>
             <article>
-                <img src="assets/a 147.jpg" alt="Várdai Enikő">
-                <h3>Bemutatkozás</h3>
-                <p>Alapvetően reál beállítottságú vagyok, ahogy ez a végzettségeimből is látszik. Jellemző rám a logikus
+                <img class="left" id="aboutImg" src="assets/a 147.jpg" alt="Várdai Enikő">
+                <p class="introp">Alapvetően reál beállítottságú vagyok, ahogy ez a végzettségeimből is látszik.
+                    Jellemző rám a logikus
                     gondolkodás, korábbi sporttevékenységeim (teljesítménytúrázás, futás) kitartásomat és türelmemet
                     fejlesztették. Szeretek feladatokat, problémákat megoldani, kihívást jelent a bonyolultabb
                     feladatok, problémák megoldása.
-                    Egyetemi végzettségemmegszerzését követően a Környezetvédelmi Felügyelőségnl dolgoztam 16 évig.
+                    Egyetemi végzettségem megszerzését követően a Környezetvédelmi Felügyelőségnél dolgoztam 16 évig.
                     2 éve keltette fel az érdeklődésem a programozás, a webfejlesztés világa, azóta foglalkozom vele.
                 </p>
-                <p>Eddigi ismereteim:</p>
-                <ul>
-                    <li>HTML5,</li>
-                    <li>CSS3,</li>
-                    <li>Javascript,</li>
-                    <li>Bootstrap.</li>
-                    <li></li>
-                </ul>
-                <p>Ezen kívül az alábbi nyelvekbe is betekintést szereztem:</p>
-                <ol>
-                    <li>PHP,</li>
-                    <li>Java,</li>
-                    <li>Python.</li>
-                </ol>
-                <p>Nyelvismeret:</p>
-                <ol>
-                    <li>Német C típusú középfokú nyelvvizsga,</li>
-                    <li>Angol C típusú alapfokú nyelvvizsga.</li>
-                </ol>
-                <p>Hobbi:</p>
-                <ul>
-                    <li>természetjárás,</li>
-                    <li>futás,</li>
-                    <li>egészséges életmód,</li>
-                    <li>pszichológia,</li>
-                    <li>klasszikus zene.</li>
-                </ul>
-
-
-            </article>
+                <article class="clearfix">
+                    <div class="left about">
+                        <p>Eddigi ismereteim:</p>
+                        <ul>
+                            <li>HTML5,</li>
+                            <li>CSS3,</li>
+                            <li>Javascript,</li>
+                            <li>Bootstrap.</li>
+                        </ul>
+                    </div>
+                    <div class="about">
+                        <p>Ezen kívül az alábbi nyelvekbe is betekintést szereztem:</p>
+                        <ol>
+                            <li>PHP,</li>
+                            <li>Java,</li>
+                            <li>Python.</li>
+                        </ol>
+                    </div>
+                </article>
+                <article class="clearfix">
+                    <div class="left about">
+                        <p>Nyelvismeret:</p>
+                        <ol style="list-style-type:upper-roman">
+                            <li>Német C típusú középfokú nyelvvizsga,</li>
+                            <li>Angol C típusú alapfokú nyelvvizsga.</li>
+                        </ol>
+                    </div>
+                    <div class="about">
+                        <p>Hobbi:</p>
+                        <ul>
+                            <li>természetjárás,</li>
+                            <li>futás,</li>
+                            <li>egészséges életmód,</li>
+                            <li>pszichológia,</li>
+                            <li>klasszikus zene.</li>
+                        </ul>
+                    </div>
+                </article>
         </section>
         <section>
             <p>Ha üzenetet szeretnél Nekem küldeni, itt megteheted:</p>
@@ -72,18 +79,18 @@
                 <div>
                     <label for="name">Név</label>
                     <input type="text" id="name" placeholder="Név" required>
-                  </div>
+                </div>
                 <div>
-                  <label for="email">Email cím</label>
-                  <input type="email" id="email" placeholder="Email" required>
-                </div>               
-                
+                    <label for="email">Email cím</label>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+
                 <div>
-                  <label for="message">Üzenet</label>
-                  <textarea id="message" rows="10" required></textarea>
+                    <label for="message">Üzenet</label>
+                    <textarea id="message" rows="10" required></textarea>
                 </div>
                 <button type="submit">Küldés</button>
-              </form>
+            </form>
         </section>
     </main>
     <footer>
