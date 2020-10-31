@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+html {
+    background-color: rgb(248, 211, 132);
+}
 
 body {
     color: green;
@@ -14,6 +17,12 @@ body {
 main {
     max-width: 90%;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        max-width: 90%;
+    }
 }
 
 .left {
@@ -30,21 +39,33 @@ a {
     text-decoration: none;
 }
 
+img {
+    border: 3px solid white;
+}
+
 /* HEADER,NAV */
 
 header {
     background-color: rgb(248, 211, 132);    
 }
 
-#menu ul li{
+#menu ul li {
     display: inline-block;
-    width: 10rem;
     text-align: center;
-    padding: 0;
+    padding: 1rem;
+    width: 100%;
 }
 
-#menu ul li a {       
+@media screen and (min-width: 600px) {
+    #menu ul li {
+        width: 10rem;
+    }
+}
+
+#menu ul li a {
     font-variant: small-caps;
+    padding: 1rem;
+    font-size: 2rem;
 }
 
 #menu ul li a:hover {
@@ -56,8 +77,8 @@ header {
     color: green;
 }
 
-.cim{    
-    text-align: left;    
+.cim {
+    text-align: left;
 }
 
 /*HOME*/
@@ -69,30 +90,50 @@ h1 {
 }
 
 .introp {
-    text-align: justify;
-    max-width: 50vw;
-    margin: 2rem auto;    
+    text-align: justify;    
+    margin: 2rem;
+}
+
+@media screen and (min-width: 600px) {
+    .introp {        
+        max-width: 50vw;
+        margin: 2rem auto;
+    }
 }
 
 #introduction img {
-    width: 40vw;
+    width: 80vw;
     margin: 1rem;
 }
 
+@media screen and (min-width: 600px) {
+    #introduction img {
+        width: 40vw;
+    }
+}
+
 .property {
-    border: 2px solid rgb(121, 9, 1);
-    background-color: rgb(253, 127, 117);
+    border: 2px solid rgb(121, 1, 111);
+    background-color: rgb(247, 219, 248);
     height: 5rem;
-    width: 25vw;  
-    margin:1rem;      
-    text-transform: uppercase;
+    width: 90%;
+    margin: 1rem auto;
+    padding-top: 1.5rem;
+    text-transform: uppercase;    
+}
+
+@media screen and (min-width: 600px) {
+    .property {
+        width: 28%;
+        padding-top: 1rem;
+        margin: 1rem;
+    }
 }
 
 /* WORKS */
 
 .works img {
-    width: 90vw;
-    padding: 3rem;
+    width: 90vw;    
 }
 
 @media screen and (min-width: 600px) {
@@ -116,7 +157,7 @@ h1 {
 }
 
 article p {
-    text-align: justify;    
+    text-align: justify;
 }
 
 /* GALLERY */
@@ -137,20 +178,48 @@ article p {
 /* ABOUT */
 
 #aboutImg {
-    width: 18vw;
+    width: 40vw;
 }
 
-li{
+@media screen and (min-width: 600px) {
+    #aboutImg {
+        width: 18vw;
+    }
+}
+
+li {
+    text-align: left;
+    font-size: 1.3rem;
+}
+
+.about {
+    display: block;    
+}
+
+@media screen and (min-width: 600px) {
+    .about {
+        display: inline-block;
+        width: 40%;
+    }    
+}
+
+input {
+    height: 2rem;
+    border: 1px solid green;
+    margin-bottom: 1rem;
+}
+
+textarea {
+    border: 1px solid green;
+}
+
+label {
+    font-size: 1.5rem;
     text-align: left;
 }
 
-.about{    
-    display: inline-block;
-    width: 40%;
-}
-
 /* FOOTER */
-footer{
+footer {
     background-color: rgb(248, 211, 132);
 }
 
