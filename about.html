@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Bemutatkozó oldal</title>
+    <title>Bemutatkozás</title>
 </head>
 
 <body>
     <header>
         <nav id="menu" class="clearfix">
             <ul>
-                <li class="left"><a href="index.html">Bemutatkozó oldal</a></li>
+                <li class="left"><a href="index.html">Bemutatkozás</a></li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="works.html">Works</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
@@ -78,7 +78,7 @@
             <form>
                 <div>
                     <label for="name">Név</label>
-                    <input type="text" id="name" placeholder="Név" required>
+                    <input type="text" id="name" minlength="5" placeholder="Név" required>
                 </div>
                 <div>
                     <label for="email">Email cím</label>
@@ -87,7 +87,7 @@
 
                 <div>
                     <label for="message">Üzenet</label>
-                    <textarea id="message" rows="10" required></textarea>
+                    <textarea id="message" rows="10" minlength="20" required></textarea>
                 </div>
                 <button type="submit">Küldés</button>
             </form>
